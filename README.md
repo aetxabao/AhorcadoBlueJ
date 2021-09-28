@@ -8,6 +8,8 @@
 4. [ Qué atributos necesita el Juego ](#atributos-juego)
     * [ Tarea 3 (sol.) ](#tarea3)
     * [ Tarea 4 (sol.) ](#tarea4)
+5. [ Entrada de datos ](#entrada)
+    * [ Tarea 5 ](#tarea5)
 
 <a name="intro"></a>
 ## 1. Introducción
