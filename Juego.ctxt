@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Juego
+comment0.text=\n\ Clase\ con\ el\ 'game\ loop'\ o\ 'bucle\ del\ juego'\n
+comment1.params=
+comment1.target=Juego()
+comment2.params=
+comment2.target=void\ jugar()
+comment2.text=\n\ Bucle\ del\ juego.\n\ Representa\ el\ estado\ inicial\ al\ empezar.\n\ Mientras\ est\u00E1\ jugando\ representa\ el\ estado\ de\ juego,\n\ procesa\ la\ entrada\ y\ actualiza\ el\ juego.\n\ Al\ finalizar\ representa\ si\ se\ ha\ ganado,\ perdido\ o\ salido.\n
+comment3.params=
+comment3.target=void\ empezar_juego()
+comment4.params=
+comment4.target=void\ representar_juego()
+comment5.params=
+comment5.target=void\ procesar_entrada()
+comment6.params=
+comment6.target=void\ actualizar_juego()
+comment7.params=
+comment7.target=void\ terminar_juego()
+numComments=8

@@ -236,3 +236,44 @@ Para jugar el juego del ahorcado se va a seguir el mismo planteamiento de bucle 
         }
         
     }
+
+
+<a name="entrada"></a>
+## 5. Entrada de datos
+
+El programa se queda colgado porque nunca cambia el estado del juego. Para poder modificarlo se pide crear una clase Entrada que tenga un método que lea el carácter que de la entrada estándar (el teclado). También se puede hacer, por ejemplo, que si el usuario quiere terminar escriba un cero. Para ello, de momento en el método privado que procesa la entrada, si la letra introducida es un cero cambiará el valor de la variable que indica el estado del juego.
+
+
+<a name="tarea5"></a>
+**Tarea 5.** Crea la clase Entrada con el método leerCaracter(). Consulta en stack overflow cómo se puede hacer esto e implementa el código del método leerCaracter(). El método procesar_entrada() debe utilizar la clase Entrada y asignar el valor devuelto por leerCaracter() a letraIntroducida. Por otra parte, el método actualizar_juego() dependiendo del valor de letraIntroducida, si es un espacio en blanco, debe cambiar el valor de estaFinalizado.
+
+    import java.util.Scanner;
+    /**
+     * Para leer los caracteres introducidos por teclado.
+     */
+    public class Entrada {
+        /**
+         * Es necesario pulsar Enter tras la tecla.
+         */
+        public char leerCaracter() {
+            // TODO: Utilizar el scanner para devolver el primer carácter escrito
+            return 'x';
+        }
+    }
+.
+
+    private void procesar_entrada() {
+        //TODO: procesar la entrada
+        System.out.println("procesar_entrada");
+        
+        
+    }
+.
+
+    private void actualizar_juego() {
+        //TODO: actualizar el juego y cambiar el estado si es necesario
+        System.out.println("actualizar_juego");
+        
+        
+        
+    }
