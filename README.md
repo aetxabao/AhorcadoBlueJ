@@ -247,7 +247,7 @@ El programa se queda colgado porque nunca cambia el estado del juego. Para poder
 
 
 <a name="tarea5"></a>
-**Tarea 5.** Crea la clase Entrada con el método leerCaracter(). Consulta en stack overflow cómo se puede hacer esto e implementa el código del método leerCaracter(). El método procesar_entrada() debe utilizar la clase Entrada y asignar el valor devuelto por leerCaracter() a letraIntroducida. Por otra parte, el método actualizar_juego() dependiendo del valor de letraIntroducida, si es un ‘0’, debe cambiar el valor de estaFinalizado. Finalmente, ejecuta el método jugar() de una instancia de Juego en BlueJ y comprueba distintos valores y el ‘0’ para salir (ya no se debe bloquear).
+**Tarea 5.** Crea la clase Entrada con el método leerCaracter(). Consulta en stack overflow cómo se puede hacer esto e implementa el código del método leerCaracter(). El método procesar_entrada() debe utilizar la clase Entrada y asignar el valor devuelto por leerCaracter() a letraIntroducida. Por otra parte, el método actualizar_juego() dependiendo del valor de letraIntroducida, si es un cero ‘0’, debe cambiar el valor de estaFinalizado. Finalmente, ejecuta el método jugar() de una instancia de Juego en BlueJ y comprueba distintos valores y el cero para salir (ya no se debe bloquear).
 
     import java.util.Scanner;
     /**
