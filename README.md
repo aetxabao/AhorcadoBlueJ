@@ -259,6 +259,8 @@ El programa se queda colgado porque nunca cambia el estado del juego. Para poder
          */
         public char leerCaracter() {
             // TODO: Utilizar el scanner para devolver el primer carácter escrito
+            
+            
             return 'x';
         }
     }
