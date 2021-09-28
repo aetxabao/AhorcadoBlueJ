@@ -10,6 +10,8 @@ public class Entrada {
      */
     public char leerCaracter() {
         // TODO: Utilizar el scanner para devolver el primer carácter escrito
+        
+        
         return 'x';
     }
     
