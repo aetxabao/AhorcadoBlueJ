@@ -42,7 +42,7 @@
     private void empezar_juego() {
         //TODO: representar el inicio y empezar
         System.out.println("empezar_juego");
-        
+        estaFinalizado = false;        
         
         
     }
