@@ -10,8 +10,10 @@
     * [ Tarea 4 (sol.) ](#tarea4)
 5. [ Entrada de datos ](#entrada)
     * [ Tarea 5 (sol.) ](#tarea5)
-5. [ Empezar juego ](#empezar)
+6. [ Empezar juego ](#empezar)
     * [ Tarea 6 (sol.) ](#tarea6)
+7. [ Renderizado ](#renderizado)
+    * [ Tarea 7 ](#tarea7)
 
 <a name="intro"></a>
 ## 1. Introducción
@@ -317,3 +319,92 @@ Para empezar el juego es necesario obtener la palabraClave que hay que adivinar.
        Diccionario dic = new Diccionario();
        palabraClave = dic.creaPalabraAleatoria();
     }
+
+
+<a name="renderizado"></a>
+## 7. Renderizado
+
+Para representar el juego se puede crear una clase Renderizador que muestre el dibujo de la horca, la palabra con las letras adivinadas y los guiones para las letras que faltan y una lista con las letras que se han probado y no están. Se pueden definir tres circunstancias y para ellas tres métodos: Dibujar el inicio, dibujar la evolución del juego y dibujar el fin del juego.
+
+<a name="tarea7"></a>
+**Tarea 7.**  Crea la clase Renderizador con tres métodos dibujarInicio(), dibujarJugando(), dibujarFin(). De momento no te preocupes por los parámetros que pueda necesitar. Crea unos stub para que cada método dibuje la situación a, d y f respectivamente de la tarea 1.  Haz que en los métodos empezar_juego(), representar_juego() y terminar_juego() se utilicen esos métodos.
+
+
+    /**
+     * Clase para representar el juego.
+     */
+    public class Renderizador {
+    
+        public void dibujarInicio(){
+            // TODO: Dibujar la situación de inicio (a)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+
+        public void dibujarJugando(){
+            // TODO: Dibujar la situación de juego (d)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+
+        public void dibujarFin(){
+            // TODO: Dibujar la situación final (f)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+
+    }
+.
+
+    private void empezar_juego() {
+        //TODO: representar el inicio y empezar
+        estaFinalizado = false;
+        Diccionario dic = new Diccionario();
+        palabraClave = dic.creaPalabraAleatoria();
+        //System.out.println("empezar_juego");
+        
+        
+    }
+.
+
+    private void representar_juego() {
+        //TODO: representar el juego
+        //System.out.println("representar_juego");
+        
+        
+    }
+.
+
+    private void terminar_juego() {
+        //TODO: dependiendo del estado del juego representar el resultado
+        //System.out.println("terminar_juego");
+        
+        
+    }
+.
