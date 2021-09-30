@@ -3,5 +3,5 @@ comment0.target=Entrada
 comment0.text=\n\ Para\ leer\ los\ caracteres\ introducidos\ por\ teclado.\n
 comment1.params=
 comment1.target=char\ leerCaracter()
-comment1.text=\n\ Es\ necesario\ pulsar\ Enter\ tras\ la\ tecla.\n
+comment1.text=\n\ Es\ necesario\ pulsar\ Enter\ tras\ escribir\ una\ letra.\n
 numComments=2

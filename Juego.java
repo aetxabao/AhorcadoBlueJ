@@ -52,16 +52,16 @@
     private void procesar_entrada() {
         //TODO: procesar la entrada
         System.out.println("procesar_entrada");
-        
-        
+        Entrada teclado = new Entrada();
+        letraIntroducida = teclado.leerCaracter();
     }
 
     private void actualizar_juego() {
         //TODO: actualizar el juego y cambiar el estado si es necesario
         System.out.println("actualizar_juego");
-        
-        
-        
+        if (letraIntroducida=='0'){
+            estaFinalizado = true;
+        }
     }
 
     private void terminar_juego() {
