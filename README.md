@@ -11,7 +11,7 @@
 5. [ Entrada de datos ](#entrada)
     * [ Tarea 5 (sol.) ](#tarea5)
 5. [ Empezar juego ](#empezar)
-    * [ Tarea 6 ](#tarea6)
+    * [ Tarea 6 (sol.) ](#tarea6)
 
 <a name="intro"></a>
 ## 1. Introducción
@@ -312,8 +312,8 @@ Para empezar el juego es necesario obtener la palabraClave que hay que adivinar.
 
     private void empezar_juego() {
        //TODO: representar el inicio y empezar
+       System.out.println("empezar_juego");
        estaFinalizado = false;
-       
-       
-       
+       Diccionario dic = new Diccionario();
+       palabraClave = dic.creaPalabraAleatoria();
     }
