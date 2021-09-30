@@ -13,7 +13,7 @@
 6. [ Empezar juego ](#empezar)
     * [ Tarea 6 (sol.) ](#tarea6)
 7. [ Renderizado ](#renderizado)
-    * [ Tarea 7 ](#tarea7)
+    * [ Tarea 7 (sol.) ](#tarea7)
 
 <a name="intro"></a>
 ## 1. Introducción
@@ -329,6 +329,7 @@ Para representar el juego se puede crear una clase Renderizador que muestre el d
 <a name="tarea7"></a>
 **Tarea 7.**  Crea la clase Renderizador con tres métodos dibujarInicio(), dibujarJugando(), dibujarFin(). De momento no te preocupes por los parámetros que pueda necesitar. Crea unos stub para que cada método dibuje la situación a, d y f respectivamente de la tarea 1.  Haz que en los métodos empezar_juego(), representar_juego() y terminar_juego() se utilicen esos métodos.
 
+![Captura tras introducir la letra 0](imgs/renderizado.png)
 
     /**
      * Clase para representar el juego.
@@ -337,46 +338,47 @@ Para representar el juego se puede crear una clase Renderizador que muestre el d
     
         public void dibujarInicio(){
             // TODO: Dibujar la situación de inicio (a)
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            System.out.println("EL AHORCADO\n");
+            System.out.println(
+                                "      \n"+
+                                "      \n"+
+                                "      \n"+
+                                "      \n"+
+                                "      \n"+
+                                "      \n"+
+                                "======\n");
+            System.out.println("_ _ _ _ _ _ _ _ _\n");
         }
 
         public void dibujarJugando(){
             // TODO: Dibujar la situación de juego (d)
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            System.out.println("Te quedan 3 fallos.\n");
+            System.out.println(
+                                " +---+\n"+
+                                " |   |\n"+
+                                " 0   |\n"+
+                                "/|\\  |\n"+
+                                "     |\n"+
+                                "     |\n"+
+                                "======\n");
+            System.out.println("a _ e a _ _ r _ _");
+            System.out.println("Fallado: u n s h b c v");
         }
 
         public void dibujarFin(){
             // TODO: Dibujar la situación final (f)
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            System.out.println("HAS PERDIDO.");
+            System.out.println("a l e a t o r i o\n");
+            System.out.println(
+                            " +---+\n"+
+                            " |   |\n"+
+                            " 0   |\n"+
+                            "/|\\  |\n"+
+                            " |   |\n"+
+                            "/ \\  |\n"+
+                            "======\n");
+            System.out.println("a _ e a _ _ r _ _");
+            System.out.println("Fallado: u n s h b c v f x p");
         }
 
     }
@@ -388,23 +390,23 @@ Para representar el juego se puede crear una clase Renderizador que muestre el d
         Diccionario dic = new Diccionario();
         palabraClave = dic.creaPalabraAleatoria();
         //System.out.println("empezar_juego");
-        
-        
+        Renderizador pintor = new Renderizador();
+        pintor.dibujarInicio();
     }
 .
 
     private void representar_juego() {
         //TODO: representar el juego
         //System.out.println("representar_juego");
-        
-        
+        Renderizador pintor = new Renderizador();
+        pintor.dibujarInicio();
     }
 .
 
     private void terminar_juego() {
         //TODO: dependiendo del estado del juego representar el resultado
         //System.out.println("terminar_juego");
-        
-        
+        Renderizador pintor = new Renderizador();
+        pintor.dibujarFin();
     }
 .
