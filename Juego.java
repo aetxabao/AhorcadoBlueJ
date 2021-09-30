@@ -45,15 +45,15 @@
         Diccionario dic = new Diccionario();
         palabraClave = dic.creaPalabraAleatoria();
         //System.out.println("empezar_juego");
-        
-        
+        Renderizador pintor = new Renderizador();
+        pintor.dibujarInicio();
     }
 
     private void representar_juego() {
         //TODO: representar el juego
         //System.out.println("representar_juego");
-        
-        
+        Renderizador pintor = new Renderizador();
+        pintor.dibujarInicio();
     }
 
     private void procesar_entrada() {
@@ -74,8 +74,8 @@
     private void terminar_juego() {
         //TODO: dependiendo del estado del juego representar el resultado
         //System.out.println("terminar_juego");
-        
-        
+        Renderizador pintor = new Renderizador();
+        pintor.dibujarFin();
     }
     
 }
