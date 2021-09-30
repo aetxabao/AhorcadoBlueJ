@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Diccionario
+comment0.text=\n\ Clase\ para\ generar\ palabras\ aleatorias.\n
+comment1.params=
+comment1.target=java.lang.String\ creaPalabraAleatoria()
+comment1.text=\n\ Devuelve\ una\ palabra\ aleatoria.\n\ @return\ palabra\ aleatoria\n
+numComments=2
