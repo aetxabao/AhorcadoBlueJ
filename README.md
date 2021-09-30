@@ -9,7 +9,7 @@
     * [ Tarea 3 (sol.) ](#tarea3)
     * [ Tarea 4 (sol.) ](#tarea4)
 5. [ Entrada de datos ](#entrada)
-    * [ Tarea 5 ](#tarea5)
+    * [ Tarea 5 (sol.) ](#tarea5)
 
 <a name="intro"></a>
 ## 1. Introducción
@@ -249,35 +249,36 @@ El programa se queda colgado porque nunca cambia el estado del juego. Para poder
 <a name="tarea5"></a>
 **Tarea 5.** Crea la clase Entrada con el método leerCaracter(). Consulta en stack overflow cómo se puede hacer esto e implementa el código del método leerCaracter(). El método procesar_entrada() debe utilizar la clase Entrada y asignar el valor devuelto por leerCaracter() a letraIntroducida. Por otra parte, el método actualizar_juego() dependiendo del valor de letraIntroducida, si es un cero ‘0’, debe cambiar el valor de estaFinalizado. Finalmente, ejecuta el método jugar() de una instancia de Juego en BlueJ y comprueba distintos valores y el cero para salir (ya no se debe bloquear).
 
+![Ejemplo tras introducir las letras: a, t, 0](imgs/entrada.png)
+
     import java.util.Scanner;
     /**
      * Para leer los caracteres introducidos por teclado.
      */
     public class Entrada {
         /**
-         * Es necesario pulsar Enter tras la tecla.
+         * Es necesario pulsar Enter tras escribir una letra.
          */
-        public char leerCaracter() {
-            // TODO: Utilizar el scanner para devolver el primer carácter escrito
-            
-            
-            return 'x';
-        }
+       public char leerCaracter() {
+         Scanner scanner = new Scanner(System.in);
+         String str = scanner.next();
+         return str.charAt(0);
+      }
     }
 .
 
     private void procesar_entrada() {
         //TODO: procesar la entrada
         System.out.println("procesar_entrada");
-        
-        
+        Entrada teclado = new Entrada();
+        letraIntroducida = teclado.leerCaracter();       
     }
 .
 
     private void actualizar_juego() {
         //TODO: actualizar el juego y cambiar el estado si es necesario
         System.out.println("actualizar_juego");
-        
-        
-        
+        if (letraIntroducida=='0'){
+            estaFinalizado = true;
+        }
     }
