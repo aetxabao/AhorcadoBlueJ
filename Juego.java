@@ -41,15 +41,19 @@
 
     private void empezar_juego() {
         //TODO: representar el inicio y empezar
-        System.out.println("empezar_juego");
         estaFinalizado = false;
         Diccionario dic = new Diccionario();
         palabraClave = dic.creaPalabraAleatoria();
+        //System.out.println("empezar_juego");
+        
+        
     }
 
     private void representar_juego() {
         //TODO: representar el juego
-        System.out.println("representar_juego");
+        //System.out.println("representar_juego");
+        
+        
     }
 
     private void procesar_entrada() {
@@ -69,7 +73,9 @@
 
     private void terminar_juego() {
         //TODO: dependiendo del estado del juego representar el resultado
-        System.out.println("terminar_juego");
+        //System.out.println("terminar_juego");
+        
+        
     }
     
 }
