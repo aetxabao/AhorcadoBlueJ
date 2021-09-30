@@ -10,6 +10,8 @@
     * [ Tarea 4 (sol.) ](#tarea4)
 5. [ Entrada de datos ](#entrada)
     * [ Tarea 5 (sol.) ](#tarea5)
+5. [ Empezar juego ](#empezar)
+    * [ Tarea 6 ](#tarea6)
 
 <a name="intro"></a>
 ## 1. Introducción
@@ -281,4 +283,37 @@ El programa se queda colgado porque nunca cambia el estado del juego. Para poder
         if (letraIntroducida=='0'){
             estaFinalizado = true;
         }
+    }
+
+
+<a name="empezar"></a>
+## 6. Empezar juego 
+
+Para empezar el juego es necesario obtener la palabraClave que hay que adivinar. Para ello se puede crear una clase Diccionario con un sólo método que genere esa palabra. En principio se va a crear un stub, es decir, un método que devuelve un valor que permite continuar la ejecución del programa. De momento siempre devolverá la misma palabra, p. ej. “aleatorio”.
+
+
+<a name="tarea6"></a>
+**Tarea 6.**  Crea la clase Diccionario con el método público creaPalabraAleatoria() que siempre (por el momento) devuelve “aleatorio”. En el método empezar_juego() de la clase Juego asigna a palabraClave el valor que se obtiene del método creaPalabraAleatoria() de la clase Diccionario.
+
+    /**
+     * Clase para generar palabras aleatorias.
+     */
+    public class Diccionario {
+       /**
+        * Devuelve una palabra aleatoria.
+        * @return palabra aleatoria
+        */
+       public String creaPalabraAleatoria(){
+           //TODO: Crear una palabra aleatoria, ahora devuelve "aleatorio"
+           return "aleatorio";
+       }
+    }
+.
+
+    private void empezar_juego() {
+       //TODO: representar el inicio y empezar
+       estaFinalizado = false;
+       
+       
+       
     }
